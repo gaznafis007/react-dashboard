@@ -1,5 +1,12 @@
 import { useEffect, useState } from "react";
 import DogsCard from "../../Components/DogsCard/DogsCard";
+import Button from "../../Components/NavCard/Button/Button";
+import {
+  ChatBubbleBottomCenterIcon,
+  CodeBracketIcon,
+  CursorArrowRaysIcon,
+  HandRaisedIcon,
+} from "@heroicons/react/24/outline";
 
 const Dashboard = () => {
   const [dogsData, setDogsData] = useState([]);
@@ -25,8 +32,18 @@ const Dashboard = () => {
           ></DogsCard>
         ))}
       </div>
-      <div className="flex flex-row gap-4 bg-white rounded-md mx-auto w-1/4 mt-6 p-2">
-        <p>hello</p>
+      <div className="flex flex-row gap-6 justify-center bg-white rounded-md mx-auto mt-6 p-4 w-1/3">
+        <Button
+          className={"bg-blue-400"}
+          buttonTitle={
+            <CursorArrowRaysIcon className="size-7 text-white"></CursorArrowRaysIcon>
+          }
+        ></Button>
+        <HandRaisedIcon className="size-7 cursor-pointer text-black"></HandRaisedIcon>
+        <ChatBubbleBottomCenterIcon className="size-7 cursor-pointer text-black"></ChatBubbleBottomCenterIcon>
+        <Button className={"bg-blue-400"} buttonTitle={"ask to edit"}></Button>
+
+        <CodeBracketIcon className="size-7 cursor-pointer text-black"></CodeBracketIcon>
       </div>
     </section>
   );
