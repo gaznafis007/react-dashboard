@@ -8,6 +8,9 @@ import Service from "../Pages/Service/Service";
 import Calender from "../Pages/Calender/Calender";
 import Report from "../Pages/Report/Report";
 import Setting from "../Pages/Setting/Setting";
+import RescuedDogs from "../Pages/RescuedDogs/RescuedDogs";
+import ClientReports from "../Pages/ClientReports/ClientReports";
+import Community from "../Pages/Community/Community";
 
 export const router = createBrowserRouter([
     {
@@ -41,6 +44,18 @@ export const router = createBrowserRouter([
             {
                 path:"/report",
                 element:<Report/>
+            },
+            {
+                path:"/rescuedDogs",
+                element:<RescuedDogs/>
+            },
+            {
+                path:"/clientReports",
+                element:<ClientReports/>
+            },
+            {
+                path:"/community",
+                element:<Community/>
             },
             {
                 path:"/settings",
