@@ -11,7 +11,7 @@ import {
 const Dashboard = () => {
   const [dogsData, setDogsData] = useState([]);
   useEffect(() => {
-    fetch("../../../public/data/data.json")
+    fetch('data.json')
       .then((res) => res.json())
       .then((data) => {
         setDogsData(data);
