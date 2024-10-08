@@ -6,9 +6,9 @@ const DogsCard = ({imgUrl, name, breed, vaccineName, date, expireDate}) => {
     return (
         <div className="bg-white rounded-md w-full p-3 flex flex-col md:flex-row gap-4 items-center">
         <img
-          className="w-32 h-32 object-cover rounded-md"
+          className="w-36 h-36 md:w-32 md:h-32 object-cover rounded-md"
           src={imgUrl}
-          alt="gog-image"
+          alt="dog-image"
         />
         <div className="w-full flex flex-col">
           <div className="flex flex-row justify-between">
@@ -18,12 +18,12 @@ const DogsCard = ({imgUrl, name, breed, vaccineName, date, expireDate}) => {
                         {breed}
                     </h2>
                 </div>
-                <div className="flex flex-row gap-4">
+                <div className="flex flex-col md:flex-row gap-4">
                     <Button className={"bg-green-600"} buttonTitle={"approval"}></Button>
                     <Button className={"bg-red-600"} buttonTitle={"decline"}></Button>
                 </div>
           </div>
-          <div className="mt-4 grid grid-cols-4 gap-3">
+          <div className="mt-4 grid grid-col-1  md:grid-cols-2 lg:grid-cols-4 gap-3">
                 <div className="flex flex-col font-semibold">
                     <h2 className="text-md text-gray-800 capitalize">vaccination name:</h2>
                     <h1 className="text-lg text-black capitalize">{vaccineName}</h1>

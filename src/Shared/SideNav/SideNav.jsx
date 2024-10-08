@@ -63,7 +63,7 @@ const items = [
 const SideNav = () => {
     return (
         <aside className="w-1/4 min-h-screen bg-blue-500 border-r border-white p-3">
-            <h2 className="text-2xl text-white text-center font-bold">Carnine karma</h2>
+            <h2 className="hidden md:block text-2xl text-white text-center font-bold">Carnine karma</h2>
             <div className="flex flex-col gap-3 mt-12">
                 {
                     items.map((item,idx) =>(
