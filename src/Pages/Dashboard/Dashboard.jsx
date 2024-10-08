@@ -7,15 +7,12 @@ import {
   CursorArrowRaysIcon,
   HandRaisedIcon,
 } from "@heroicons/react/24/outline";
+import { data } from "../../assets/data/data";
 
 const Dashboard = () => {
   const [dogsData, setDogsData] = useState([]);
   useEffect(() => {
-    fetch('data.json')
-      .then((res) => res.json())
-      .then((data) => {
-        setDogsData(data);
-      });
+    setDogsData(data)
   }, []);
   return (
     <section className="bg-blue-100 p-8 min-h-screen">
