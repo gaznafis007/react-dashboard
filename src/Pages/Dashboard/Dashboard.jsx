@@ -29,7 +29,7 @@ const Dashboard = () => {
           ></DogsCard>
         ))}
       </div>
-      <div className="flex flex-row gap-6 justify-center bg-white rounded-md mx-auto mt-6 p-4 w-1/3">
+      <div className="flex flex-col md:flex-row gap-6 justify-center items-center bg-white rounded-md md:mx-auto mt-6 p-4 w-full mx-6 md:w-1/3">
         <Button
           className={"bg-blue-400"}
           buttonTitle={
