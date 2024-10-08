@@ -3,7 +3,7 @@ import DashboardLayout from "../Layout/DashboardLayout";
 import Dashboard from "../Pages/Dashboard/Dashboard";
 import Dogs from "../Pages/Dogs/Dogs";
 import Book from "../Pages/Book/Book";
-import Chat from "../Pages/Chat/CHat";
+
 import Service from "../Pages/Service/Service";
 import Calender from "../Pages/Calender/Calender";
 import Report from "../Pages/Report/Report";
@@ -11,6 +11,7 @@ import Setting from "../Pages/Setting/Setting";
 import RescuedDogs from "../Pages/RescuedDogs/RescuedDogs";
 import ClientReports from "../Pages/ClientReports/ClientReports";
 import Community from "../Pages/Community/Community";
+import Chat from "../Pages/Chat/Chat";
 
 export const router = createBrowserRouter([
     {
